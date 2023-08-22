@@ -1,0 +1,45 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.9
+  decorations: full
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrainsMono NL
+    style:  Regular
+  bold:
+    family: JetBrainsMono NL
+    style:  Bold
+  italic:
+    family: JetBrainsMono NL
+    style:  Italic
+  bold_italic:
+    family: JetBrainsMono NL
+    sLyle: Bold Italic
+  size: 14
+draw_bold_text_with_bright_colors: true
+
+import:
+  - ~/.config/alacritty/catppuccin-mocha.yml
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+  - { key: PageUp,   mods: Shift, action: ScrollPageUp,   mode: ~Alt }
+  - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home,     mods: Shift, action: ScrollToTop,    mode: ~Alt }
+  - { key: End,      mods: Shift, action: ScrollToBottom, mode: ~Alt }
