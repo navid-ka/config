@@ -6,4 +6,6 @@ function fish_greeting
         'There is always one more bug to fix.'
 end
 alias vim="nvim"
+alias ls="exa"
+alias l="exa -lah"
 starship init fish | source
